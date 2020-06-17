@@ -4,7 +4,7 @@ body {
 
 .result {
     border: 1px solid black;
-    margin: 40px auto;
+    margin: 0 auto 40px auto;
     line-height: 40px;
     width: 400px;
     text-align: left;
