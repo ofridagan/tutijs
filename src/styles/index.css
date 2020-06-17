@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+
+.result {
+    border: 1px solid black;
+    margin: 40px auto;
+    line-height: 40px;
+    width: 400px;
+    text-align: left;
+    color: purple;
+    padding-left: 20px;
+}
