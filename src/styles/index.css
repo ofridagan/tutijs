@@ -2,6 +2,19 @@ body {
     text-align: center;
 }
 
+.chapter {
+    width: fit-content;
+    margin-top: 60px;
+}
+
+.chapter-title {
+    color: grey;
+}
+
+.results {
+    text-align: left;
+}
+
 .result {
     border: 1px solid black;
     margin: 0 auto 40px auto;
