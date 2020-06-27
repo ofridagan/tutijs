@@ -3,7 +3,7 @@ export const __name = "I. Introduction";
 
 /*
  * ########################################  
- *     tuti.js - Introduction
+ *     tuti.js - I. Introduction
  * ########################################  
  *
  */
@@ -16,7 +16,7 @@ export const __name = "I. Introduction";
  * ----------------------------------------
  * 
  * Asumming you already followed the instructions in the README.md file,
- * you now have a browser open and should be able to see the title of this chapter.
+ * you should now have a browser open and should be able to see the title of this chapter.
  * If not try to follow the README file again, or call fiki :)
  */
 
