@@ -30,7 +30,7 @@ The development server runs on your machine and serves the project your are abou
 
 ## What's next?
 
-Open your favorite text editor (try [Visual Studio Code](https://code.visualstudio.com/)), locate the first chapter at **src/chapters/1_intro.js**.
+Open your favorite text editor (try [Visual Studio Code](https://code.visualstudio.com/)), locate the first chapter at **src/chapters/1_introduction.js**.
 Follow the instruction there.
 
 ### Good Luck <3 ###
