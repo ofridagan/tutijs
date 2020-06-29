@@ -8,8 +8,20 @@ Play with, have fun!
 
 ## Installation	
 
-**install [node.js](https://nodejs.org/)** - if not already installed
+### Get you environment ready
+The first thing we need to do is make sure you have all the tools needed to be a JS developer.
+This can take some time the first time you do it... even a few hours.
 
+**choose a text editor** I think [Visual Studio Code](https://code.visualstudio.com/) is a nice one.
+
+**install [node.js](https://nodejs.org/)** - if not already installed.
+You can check if node.js is installed by running:
+    node --version
+
+**setup your [git]([https://help.github.com/en/github/getting-started-with-github/set-up-git#setting-up-git](https://help.github.com/en/github/getting-started-with-github/set-up-git#setting-up-git))**
+
+
+### Get tuti.js
 **Clone this repository**
 
     cd ~/
@@ -30,7 +42,7 @@ The development server runs on your machine and serves the project your are abou
 
 ## What's next?
 
-Open your favorite text editor (try [Visual Studio Code](https://code.visualstudio.com/)), locate the first chapter at **src/chapters/1_introduction.js**.
+Open your favorite text editor, locate the first chapter at **src/chapters/1_introduction.js**.
 Follow the instruction there.
 
 ### Good Luck <3 ###
