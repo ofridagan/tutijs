@@ -1,3 +1,4 @@
+
 # Tuti.JS!
 
 Welcome to the tuti.js platform!
@@ -20,7 +21,7 @@ You can check if node.js is installed by running:
 
     node --version
 
-**setup your [git]([https://help.github.com/en/github/getting-started-with-github/set-up-git#setting-up-git](https://help.github.com/en/github/getting-started-with-github/set-up-git#setting-up-git))**
+**setup your [git](https://help.github.com/en/github/getting-started-with-github/set-up-git#setting-up-git)**
 
 
 ### Get tuti.js
@@ -48,4 +49,3 @@ Open your favorite text editor, locate the first chapter at **src/chapters/1_int
 Follow the instruction there.
 
 ### Good Luck <3 ###
-
