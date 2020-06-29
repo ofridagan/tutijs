@@ -1,7 +1,7 @@
 # Tuti.JS!
 
 Welcome to the tuti.js platform!
-This is a nice little environment for Tuti to learn JS with ease.
+This is a nice little environment for Tuti to learn Javascript with ease.
 The idea is to provide a quick way to write some code and see the result.
 Play with, have fun!
 
