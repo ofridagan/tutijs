@@ -17,6 +17,7 @@ This can take some time the first time you do it... even a few hours.
 
 **install [node.js](https://nodejs.org/)** - if not already installed.
 You can check if node.js is installed by running:
+
     node --version
 
 **setup your [git]([https://help.github.com/en/github/getting-started-with-github/set-up-git#setting-up-git](https://help.github.com/en/github/getting-started-with-github/set-up-git#setting-up-git))**
@@ -47,3 +48,4 @@ Open your favorite text editor, locate the first chapter at **src/chapters/1_int
 Follow the instruction there.
 
 ### Good Luck <3 ###
+
