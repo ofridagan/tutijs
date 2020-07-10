@@ -2,6 +2,12 @@ import './styles/index.css';
 
 import chapters from './chapters.js';
 
+const handleValue = (value) => {
+    if (typeof value === 'object')
+        return JSON.stringify(value, null, '  ');
+    return value;
+}
+
 const buildChapterResults = (chapter) => {
 
     const resultsContainer = document.createElement("div");
@@ -12,10 +18,15 @@ const buildChapterResults = (chapter) => {
         if (key.indexOf('__') === 0)
             return;
 
-        const result = chapter[key] instanceof Function ? chapter[key]() : chapter[key];
+        let result = chapter[key] instanceof Function ? chapter[key]() : chapter[key];
+        result = handleValue(result);
 
-        const resultDiv = document.createElement('div');
+        const isTextArea = (typeof chapter[key] === 'object' && chapter[key] );
+        const resultDiv = document.createElement(isTextArea ? 'textarea' : 'div');
         resultDiv.className = "result";
+        if (isTextArea) {
+            resultDiv.rows = 10;
+        }
 
         const label = document.createTextNode(key);
         label.className = "label";

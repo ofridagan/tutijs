@@ -24,3 +24,9 @@ body {
     color: purple;
     padding-left: 20px;
 }
+
+textarea.result {
+    line-height: 18px;
+    display: block;
+    width: 420px
+}

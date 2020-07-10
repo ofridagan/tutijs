@@ -26,6 +26,8 @@ export const __disabled = true;
  * For example, while products in the real world could have many, many properties like weight, temperture, etc. When we design an online store app,
  * we may only choose to represent prices and quantites, because those are the properties relevant to our application.
  *
+ * TODO add example (mathan is a boy, what he is is the value. the word 'mathan' is the variable used to reference the person named 'mathan')
+ * TODO and also rephrace the following
  * No matter what kind (or 'type') of information a JS program uses - the way to work with that information is to store it in a variable.
  * A variable is just a name you use to reference the information stored inside it.
  * The information stored in the variable is called a - value.
