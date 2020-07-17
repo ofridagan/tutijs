@@ -255,11 +255,67 @@ export let iDontKnowWhoIam;
  *
  * A value of type Object is a collection of named-values.
  * For example, a boy can be represented as an object with two named-values: a 'birthday' with the value "16/08/2019 and a 'cutenessLevel' of 10.
+ *
+ * An objet is denoted with curlybraces {...}.
+ * Inside the curlybraces, you specify the values of the object and their names. The names of the values are often referred to as 'keys'.
+ * So an objects looks like: {someKey1: someValue1, someKey2: someValue2, ..., someKeyN: someValueN}
+ * 
+ * Here's the example object described above:
  */
 
 export const mathan = { birthday: "16/08/2019", cutenessLevel: 10 };
 
+/*
+ * 
+ */
 
+/*
+ * The simplest object is an object with no values (or keys) - the empty object denoted by a {}
+ * Please note every object you define is unique. For example, in the following example the two objects are not the same one:
+ */
+const nothing = {};
+const notAThing = {};
+
+/*
+ * You can use the === operator to check if two objects are actually the same one.
+ *
+ * Try to guess the value of the following variables:
+ */
+export const mathanIsMathan = mathan ===  mathan;
+export const areWeTheSame = nothing === notAThing;
+
+/*
+ * Yep, you got it. Two objects are considered the same if and only if they are in fact ONE object.
+ * 
+ * Important!
+ * While you can create multiple objects which are identical, other types like number, string, boolean (also called 'primitive' types) are different.
+ * Any two primitives with similar values are actually not two values, but ONE.
+ * This is why "tuti" === "tuti" is true, but {} === {} is false.
+ */
+
+/*
+ * Working with objects.
+ * So we leared how to create objects. Now what?
+ * There are two very useful things you can do with an object: access (read) its internal values, and modify (write) them.
+ */
+
+/*
+ * The dot (.) notation:
+ */
+export const mathanBirthday = mathan.birthday;
+
+const circle = { radius: 77, x: 0, y: 0 };
+export const circleArea = circle.radius * circle.radius * 3.14;
+
+/*
+ * The dot notation is simple, but it has one big limitation: The name of the value (the 'key'), is static, and needs to be known when writing the program.
+ * For cases where you need a dynamic key, that needs to be evaluted you can use the [] notation.
+ *
+ * Check out what you can do with the [] notation:
+ * /
+
+/*
+ * As you can see, 
 
 /*
  * I'm so proud of you! You get a kiss :)
