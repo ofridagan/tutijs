@@ -1,9 +1,9 @@
-export const __name = "V. Operators";
-export const __disabled = true;
+export const __name = "VI. Control Flows";
+//export const __disabled = true;
 
 /*
  * ########################################  
- *     tuti.js - V. Operators
+ *     tuti.js - VI. Control Flows
  * ########################################  
  *
  */
@@ -11,39 +11,16 @@ export const __disabled = true;
 
 /*
  * ------- Chapter Goals ------------------
- * Learn all about the operators supported in Javascript.
- * Time: about 0.5 hours
+ * Learn about the main way in JS to control the flow of statements execution.
+ * Time: about 2 hours
  * ----------------------------------------
  */
 
 /*
- * Javascript, like most programming languages, supports operatios syntax.
- * Operators are language constructs which performs an operaion on its operands (an operad is the value which the operator operates on)..
- *
- * Operators are usally categorized by the number of oprands, and the position of the operator in respect to its operads.
- *
- * Number of operands
- * An operator in JS can be refered to as 'unary', 'binary' or 'ternary', depending on the number of operads it takes (one, two or three respectevly).
- *
- * For example the plus (+) sign in the following expression: x + 5 is a binary operator. The expression evaluate to the sum of the two values in x and 5.
- * x and 5 are called the 'operands' of the '+' operator.
- * 
- * ===== Unary =====
- * Unary operators have the form of: <operator><operand> or <operand><operator>
- * Examples of unary operators: -x, ++i, tuti++
- * Note, ++i and i++ are considered two different operators.
- *
- * ===== Binary =====
- * Binary operators in JS are 'infix', which means the operator comes between its two operands: <operand><operator><operand>
- * Examples of binary operators: 7 * 2, 'tuti' + '.js', x = 1, x > y 
- * --- BTW... not JS ---
- * some languages also support 'prefix' and even 'postfix' operators. a prefix plus operator might look like this: + 5 3 which means the sum 5 and 3
- * some languages even support custom operators which you can define on your own and add to the language.
- * ---------------------
- *
- * ===== Ternary =====
- * There is actually only one, ternary operator - the conditanal operator: condition ? val1 : val2 
- * What does it do? The ? : operator first evaluate the expression before the '?' (condition), if it evaluates to true then val1 is return, otherwise val2.
+ * Javascript supports a small number of control-flow statements: 'if...else', 'for' and 'while'.
+ * Control-flow statements are used to control the flow of the program.
+ * Without control-flow statements the program is usually executed line-by-line. For example, line 7 is executed after line 6.
+ * Control-flow statements are a way to tell the computer which line to execute next.
  *
  */
 
@@ -51,14 +28,44 @@ export const __disabled = true;
  * For example:
  */
 
-const price = 99;
-const payment = 90;
-//export const message = payment >= price ? "Thanks for purchasing our product" : "Hi! thats not enough";
+let answer = "1 + 1 = 2";
+if (1 + 1 === 3) {
+    answer = "1 + 1 = 3";
+};
+
+export {answer};
 
 /*
- * Play around a bit with the trenary operator.
- * Can you improve the above example to also tell us when the customer deserves some money back?
- * Try to use only the trenary operator.
+ * See? In the example above, line 31 is executed first, and a value of "1 + 1 = 2" is assigned to the answer variable.
+ * Next, line 32 starts with the 'if' keyword. This tells the computer to first evaluate the condition inside the parentheses (1 + 1 === 3), which evalutes to the value - false.
+ * Because the condition evaluates to false, the next line which is executed will be line 35. Line 33 is completely ignored.
+ *
+ * Try to change the condition to one that evaluates to true and see what happens.
+ */
+
+/*
+ * The 'if' control statement can also be followed by an 'else' statement.
+ * The statements inside the else block (a block is a list of statements surrounded by curly braces {}), are executed when the condition evaluates to false.
+ * An 'else if' can also be used to add another condition to be evaluted.
+ *
+ * This will be much clearer with an example:
+ */
+
+const amount = 5;
+let numberOfBalls;
+
+if (amount === 0) {
+    numberOfBalls = "Matan has no balls :(";
+} else if (amount === 1) {
+    numberOfBalls = "Matan has only one ball";
+} else {
+    numberOfBalls = `Matan has ${amount} balls :)`;
+};
+
+export {numberOfBalls};
+
+/*
+ * Make sure it works, change 'amount' to test all possible results.
  */
 
 /*
@@ -148,7 +155,7 @@ family += (counter++, ', mathan');
 
 /*
  * OK, OK that wasn't such an exciting chapter. Let's just move on.
- * Next chapter is - Control Flows.
+ * Next chapter is probably the most important one - Functions!
  */
 
 /*
@@ -157,4 +164,4 @@ family += (counter++, ', mathan');
  * %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  */
  
-/* >>>>>> Next chapter: Control Flows >>>>>> */
+/* >>>>>> Next chapter: Functions >>>>>> */

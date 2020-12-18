@@ -1,9 +1,9 @@
-export const __name = "V. Operators";
-export const __disabled = true;
+export const __name = "VII. Functions";
+//export const __disabled = true;
 
 /*
  * ########################################  
- *     tuti.js - V. Operators
+ *     tuti.js - VI. Functions
  * ########################################  
  *
  */
@@ -148,7 +148,7 @@ family += (counter++, ', mathan');
 
 /*
  * OK, OK that wasn't such an exciting chapter. Let's just move on.
- * Next chapter is - Control Flows.
+ * Next chapter is probably the most important one - Functions!
  */
 
 /*
@@ -157,4 +157,4 @@ family += (counter++, ', mathan');
  * %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  */
  
-/* >>>>>> Next chapter: Control Flows >>>>>> */
+/* >>>>>> Next chapter: Functions >>>>>> */
