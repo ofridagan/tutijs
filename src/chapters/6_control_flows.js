@@ -106,6 +106,63 @@ export {vegetablesStore};
  */
 
 /*
+ * Awesome! These were the "conditional' control flow statements: if...else and swtich...case
+ *
+ * Let's move on to - loops! yeah!
+ * A loop is a piece of code which runs over-and-over.
+ *
+ * Why do we need loops?
+ * Well, a simple answer is this is where a computer really shines - doing the same (or similar) operation again and again.
+ * A computer doesn't get tired, or confused... it can repeate itself for hours without complaining.
+ *
+ * If you think about it, a Macbook Pro can run about 2.3 billion operations in one second (2.3GHz).
+ * A typical application can have a few thousands lines. Few millions max.
+ * These means a computer should be able to run ANY program in under 1 second!
+ * Why doesn't it? Why do most program we use run for much longer?
+ *
+ * You guessed it - loops.
+ * In fact, in most applications, the program is spent most of the time inside a loop.
+ */
+
+/*
+ * ----------
+ * while loop
+ * ----------
+ * A while loop is used to repeate a block (few statements surrounded by {}) as long as a specific condition holds.
+ *
+ * Let's look at an example:
+ */
+
+const allProducts = [
+    {name: "socks", price: 5},
+    {name: "shirt", price: 22},
+    {name: "pants", price: 38},
+    {name: "dress", price: 60},
+    {name: "dyson", price: 90}
+]
+
+let productsToBuy = "";
+let dollarsLeft = 110;
+let productIndex = 0;
+
+while (productIndex < allProducts.length && dollarsLeft >= allProducts[productIndex].price) {
+    productsToBuy += ` ${allProducts[productIndex].name}`; 
+    dollarsLeft -= allProducts[productIndex].price;
+    productIndex++;
+}
+
+export {productsToBuy, dollarsLeft};
+
+/*
+ * As usual, really spend some time to try and understand the code above... if you need help, read on.
+ *
+ * First, we define an array of products - allProducts. Every product has a name and a price.
+ * Next we intialize some variables:
+ * productsToBuy - the output message.
+ * dollarsLeft - this represents our budget.
+ * productIndex - this is the current product position we are looking at
+
+/*
  * OK, OK that wasn't such an exciting chapter. Let's just move on.
  * Next chapter is probably the most important one - Functions!
  */
