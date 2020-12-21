@@ -146,8 +146,9 @@ let dollarsLeft = 110;
 let productIndex = 0;
 
 while (productIndex < allProducts.length && dollarsLeft >= allProducts[productIndex].price) {
-    productsToBuy += ` ${allProducts[productIndex].name}`; 
-    dollarsLeft -= allProducts[productIndex].price;
+    const currentProduct = allProducts[productIndex];
+    productsToBuy += ` ${currentProduct.name}`; 
+    dollarsLeft -= currentProduct.price;
     productIndex++;
 }
 
@@ -161,6 +162,16 @@ export {productsToBuy, dollarsLeft};
  * productsToBuy - the output message.
  * dollarsLeft - this represents our budget.
  * productIndex - this is the current product position we are looking at
+ *
+ * Next, a while statement followed by a condition.
+ * The statements on lines 149-152, are repeated as long as the condition (productIndex < allProducts.length && dollarsLeft >= allProducts[productIndex].price) evaluates to true.
+ * the variable productIndex starts off with a value of 0, and line 152 increment it by 1.
+ * As a result, every loop iteration can deal with the next product in the allProducts array - the current product is stored in a currentProduct const.
+ * Note currentProduct is a constant defined inside the while block. It is recreated on every iteration and is constant through the entire iteration.
+ *
+ * Line 150 collects the information we want to display - the names of the products we can buy.
+ * Line 151 is keeping track of the budget by redrawing the product price from out budget, stored in dollarsLeft.
+ */
 
 /*
  * OK, OK that wasn't such an exciting chapter. Let's just move on.
