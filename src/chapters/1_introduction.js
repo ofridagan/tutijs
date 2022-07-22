@@ -28,14 +28,14 @@ export const __name = "I. Introduction";
  * Let's start by looking around this file.
  * But to help you out a bit, let me tell you about Comments.
  *
- * Comments are lines of code, which are meant to be ignored. In fact javascript deleted, those lines before running your program.
+ * Comments are lines of code, which are meant to be ignored. In fact javascript actually deletes those lines before running your program.
  * Comments are meant to be read by hummans. They are suppose to shine light on the more complex parts of your code and help others (or future you)
  * decipher the ideas or logic behind a particular piece code.
  *
  * TIP: you should always prefer a simple and readable code with little or no comments, to code which is complex but well commented.
  *
  * JS (javascript) allows us to add comments in two different ways:
- * 1. single-line comments are written as // and than your comment (see line 2 in this file, for example).
+ * 1. single-line comments are written as // and then your comment (see line 2 in this file, for example).
  * 2. multiple-line comment are written with an openning /* then your comments, then a closing */
 
 /*
@@ -53,7 +53,7 @@ export const __name = "I. Introduction";
 /* just a string value */
 //export const first = "I Love You";
 
-/* a function with no arguments the just return value */
+/* a function with no arguments which just returns a value */
 //export const second = () => "Tuti";
 
 /* a function with a body */
@@ -67,6 +67,8 @@ export const __name = "I. Introduction";
  * Now save the file, and take a look at the browser. You should be able to see 3 boxes with some text in them.
  *
  * See it? Awesome!
+ * Tuti.JS automatically picks up any value you 'export' and displays it in the browser.
+ * It even runs an exported function and displays the returned value (functions are comming... chapter 7).
  *
  * Try to play a bit with the code above. Change the text to some other message you would like to see.
  */
