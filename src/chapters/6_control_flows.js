@@ -1,13 +1,12 @@
 export const __name = "VI. Control Flows";
-//export const __disabled = true;
+export const __disabled = true;
 
 /*
- * ########################################  
+ * ########################################
  *     tuti.js - VI. Control Flows
- * ########################################  
+ * ########################################
  *
  */
-
 
 /*
  * ------- Chapter Goals ------------------
@@ -30,12 +29,12 @@ export const __name = "VI. Control Flows";
  * ----------
  */
 
-let answer = "1 + 1 = 2";
-if (1 + 1 === 3) {
-    answer = "1 + 1 = 3";
-};
+// let answer = "1 + 1 = 2";
+// if (1 + 1 === 3) {
+//     answer = "1 + 1 = 3";
+// };
 
-export {answer};
+// export {answer};
 
 /*
  * See? In the example above, line 31 is executed first, and a value of "1 + 1 = 2" is assigned to the answer variable.
@@ -53,18 +52,18 @@ export {answer};
  * This will be much clearer with an example:
  */
 
-const amount = 5;
-let numberOfBalls;
+// const amount = 5;
+// let numberOfBalls;
 
-if (amount === 0) {
-    numberOfBalls = "Matan has no balls :(";
-} else if (amount === 1) {
-    numberOfBalls = "Matan has only one ball";
-} else {
-    numberOfBalls = `Matan has ${amount} balls :)`;
-};
+// if (amount === 0) {
+//     numberOfBalls = "Matan has no balls :(";
+// } else if (amount === 1) {
+//     numberOfBalls = "Matan has only one ball";
+// } else {
+//     numberOfBalls = `Matan has ${amount} balls :)`;
+// };
 
-export {numberOfBalls};
+// export {numberOfBalls};
 
 /*
  * Make sure it works, change 'amount' to test all possible results.
@@ -79,25 +78,25 @@ export {numberOfBalls};
  *  and executes statements associated with that case, as well as statements in cases that follow the matching case.
  */
 
- /*
-  *  For example:
-  */
+/*
+ *  For example:
+ */
 
-let vegetablesStore = "";
-const expr = 'Papayas';
-switch (expr) {
-    case 'Oranges':
-        vegetablesStore = "Oranges are $0.59 a pound.";
-        break;
-    case 'Mangoes':
-    case 'Papayas':
-        vegetablesStore = "Mangoes and papayas are $2.79 a pound."
-        break;
-    default:
-        vegetablesStore = `Sorry, we are out of ${expr}.`;
-}
+// let vegetablesStore = "";
+// const expr = 'Papayas';
+// switch (expr) {
+//     case 'Oranges':
+//         vegetablesStore = "Oranges are $0.59 a pound.";
+//         break;
+//     case 'Mangoes':
+//     case 'Papayas':
+//         vegetablesStore = "Mangoes and papayas are $2.79 a pound."
+//         break;
+//     default:
+//         vegetablesStore = `Sorry, we are out of ${expr}.`;
+// }
 
-export {vegetablesStore};
+// export {vegetablesStore};
 
 /*
  * Take a few moments. Play with it, try to understand what's going on.
@@ -133,26 +132,26 @@ export {vegetablesStore};
  * Let's look at an example:
  */
 
-const allProducts = [
-    {name: "socks", price: 5},
-    {name: "shirt", price: 22},
-    {name: "pants", price: 38},
-    {name: "dress", price: 60},
-    {name: "dyson", price: 90}
-]
+// const allProducts = [
+//     {name: "socks", price: 5},
+//     {name: "shirt", price: 22},
+//     {name: "pants", price: 38},
+//     {name: "dress", price: 60},
+//     {name: "dyson", price: 90}
+// ]
 
-let productsToBuy = "";
-let dollarsLeft = 110;
-let productIndex = 0;
+// let productsToBuy = "";
+// let dollarsLeft = 110;
+// let productIndex = 0;
 
-while (productIndex < allProducts.length && dollarsLeft >= allProducts[productIndex].price) {
-    const currentProduct = allProducts[productIndex];
-    productsToBuy += ` ${currentProduct.name}`; 
-    dollarsLeft -= currentProduct.price;
-    productIndex++;
-}
+// while (productIndex < allProducts.length && dollarsLeft >= allProducts[productIndex].price) {
+//     const currentProduct = allProducts[productIndex];
+//     productsToBuy += ` ${currentProduct.name}`;
+//     dollarsLeft -= currentProduct.price;
+//     productIndex++;
+// }
 
-export {productsToBuy, dollarsLeft};
+// export {productsToBuy, dollarsLeft};
 
 /*
  * As usual, really spend some time to try and understand the code above... if you need help, read on.
@@ -180,8 +179,8 @@ export {productsToBuy, dollarsLeft};
 
 /*
  * %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- * Congradulations!!! You've reached the end of the fifth chapter!
+ * Congradulations!!! You've reached the end of the sixth chapter!
  * %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  */
- 
+
 /* >>>>>> Next chapter: Functions >>>>>> */

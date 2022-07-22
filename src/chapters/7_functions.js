@@ -1,13 +1,12 @@
 export const __name = "VII. Functions";
-//export const __disabled = true;
+export const __disabled = true;
 
 /*
- * ########################################  
- *     tuti.js - VI. Functions
- * ########################################  
+ * ########################################
+ *     tuti.js - VII. Functions
+ * ########################################
  *
  */
-
 
 /*
  * ------- Chapter Goals ------------------
@@ -27,7 +26,7 @@ export const __name = "VII. Functions";
  *
  * For example the plus (+) sign in the following expression: x + 5 is a binary operator. The expression evaluate to the sum of the two values in x and 5.
  * x and 5 are called the 'operands' of the '+' operator.
- * 
+ *
  * ===== Unary =====
  * Unary operators have the form of: <operator><operand> or <operand><operator>
  * Examples of unary operators: -x, ++i, tuti++
@@ -35,14 +34,14 @@ export const __name = "VII. Functions";
  *
  * ===== Binary =====
  * Binary operators in JS are 'infix', which means the operator comes between its two operands: <operand><operator><operand>
- * Examples of binary operators: 7 * 2, 'tuti' + '.js', x = 1, x > y 
+ * Examples of binary operators: 7 * 2, 'tuti' + '.js', x = 1, x > y
  * --- BTW... not JS ---
  * some languages also support 'prefix' and even 'postfix' operators. a prefix plus operator might look like this: + 5 3 which means the sum 5 and 3
  * some languages even support custom operators which you can define on your own and add to the language.
  * ---------------------
  *
  * ===== Ternary =====
- * There is actually only one, ternary operator - the conditanal operator: condition ? val1 : val2 
+ * There is actually only one, ternary operator - the conditanal operator: condition ? val1 : val2
  * What does it do? The ? : operator first evaluate the expression before the '?' (condition), if it evaluates to true then val1 is return, otherwise val2.
  *
  */
@@ -80,7 +79,7 @@ const payment = 90;
  * prefix (++x) - adds 1 to x, and returns the new value. same with --x.
  * postfix (x++) - adds 1 to x, and return the original value, before adding 1. same with x--.
  *
- * The increment and decrement operators (both prefix and postfix) can be 
+ * The increment and decrement operators (both prefix and postfix) can be
  * The ++ and -- operators also returns a value, but they also have a side-effect - changing the value of the variable.
  * This is why, while other operators can accept expressions as operands - for example arr[2] + arr[3], the operands of the ++ and -- operators must be a variable name.
  *
@@ -133,10 +132,10 @@ const payment = 90;
  */
 
 let counter = 0;
-let family = '';
-family += (counter++, 'tuti');
-family += (counter++, ', fiki');
-family += (counter++, ', mathan');
+let family = "";
+family += (counter++, "tuti");
+family += (counter++, ", fiki");
+family += (counter++, ", mathan");
 //export {family, counter};
 
 /*
@@ -153,8 +152,8 @@ family += (counter++, ', mathan');
 
 /*
  * %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- * Congradulations!!! You've reached the end of the fifth chapter!
+ * Congradulations!!! You've reached the end of the seventh chapter!
  * %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  */
- 
+
 /* >>>>>> Next chapter: Functions >>>>>> */
