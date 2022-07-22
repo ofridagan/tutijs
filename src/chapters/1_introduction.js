@@ -1,5 +1,5 @@
 export const __name = "I. Introduction";
-//export const __disabled = true;
+// export const __disabled = true;
 
 /*
  * ########################################  
@@ -16,7 +16,7 @@ export const __name = "I. Introduction";
  * ----------------------------------------
  * 
  * Asumming you already followed the instructions in the README.md file,
- * you should now have a browser open and should be able to see the title of this chapter.
+ * you should now have a browser open and should be able to see the title "Tuti.JS - Tuti learns javascript".
  * If not try to follow the README file again, or call fiki :)
  */
 
@@ -44,10 +44,9 @@ export const __name = "I. Introduction";
 */
 
 /*
- * Currently, this file includes exactly one, uncommented line - the first line (which tells tuti.js about the name of this chapter).
- * Let's change that, shell we?
- *
- * Try to uncomment all the single-line comments bellow (delete the //'s):
+ * Currently, this file includes exactly one, uncommented line (Line #1 which tells tuti.js about the name of this chapter),
+ * Time to uncomment some lines.
+ * Please uncomment all 6 single-line comments bellow (delete the //'s):
  */
 
 /* just a string value */
@@ -67,10 +66,9 @@ export const __name = "I. Introduction";
  * Now save the file, and take a look at the browser. You should be able to see 3 boxes with some text in them.
  *
  * See it? Awesome!
- * Tuti.JS automatically picks up any value you 'export' and displays it in the browser.
- * It even runs an exported function and displays the returned value (functions are comming... chapter 7).
  *
  * Try to play a bit with the code above. Change the text to some other message you would like to see.
+ * Can you try and guess how the 'third' function work?
  */
 
 /*
@@ -91,7 +89,7 @@ export const __name = "I. Introduction";
 /*
  * ######### Bonus ##################
  * The keyword 'export' in JS is used to allow a value from one file (also called module) to be accessed from other files (or modules).
- * Every value you export from this file (or from other chapters) will be displayed on the browser-page automatically!
+ * Any value you export from this file (or from other chapters) will be displayed on the browser-page automatically!
  * If you export a function it will get run and the returned value will be displayed. 
  * ######### Bonus ##################
  *

@@ -21,11 +21,11 @@ export const __disabled = true;
  * Every program in JS is just a list of those statements, sometimes called 'instructions'.
  *
  * A few statements may also be grouped together into bigger constructs like blocks, if's, loops, and function - which we'll learn all about in next chapters.
- * To continue the humman-language analogy, these groups of statements would be thought of something like paragraphs.
+ * To continue the humman-language analogy, these groups of statements could be thought of something like paragraphs.
  */
 
 /*
- * Before continuing, please to me a favor and comment-out line number 2 of this file to enable it.
+ * Before continuing, please do me a favor and comment-out line number 2 of this file to enable it.
  * Optionaly you can also uncomment line number 2 of the previous chapter to disable it, and get a cleaner output in the browser.
  */
 
