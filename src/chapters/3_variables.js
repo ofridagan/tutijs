@@ -19,24 +19,27 @@ export const __disabled = true;
 /*
  * Most of what a computer program does is usually just about working with information - creating it, storing it, moving it around, and performing calculations on it.
  * Here are two examples:
- *   1. An online shop - probably needs to work with information about products, quantities, prices and the shopping cart.
+ *   1. An online store - probably needs to work with information about products, quantities, prices and the shopping cart.
  *   2. GPS navigation app - probably needs to work with maps, routes and real-time traffic.
  *
- * It can be useful to think of values as a virtual representation of the relevant elements of reality. 
- * For example, while products in the real world could have many, many properties like weight, temperture, etc. When we design an online store app,
- * we may only choose to represent prices and quantites, because those are the properties relevant to our application.
+ * What is a "value"?
+ * You should think of values as an abstract representation of some entity in reality. 
+ * An online store for example, will likely need to work with Product values.
+ * A Product in an online store application might be define as having some properties like: a name, a price, a description and maybe some pictures.
  *
- * TODO add example (mathan is a boy, what he is is the value. the word 'mathan' is the variable used to reference the person named 'mathan')
- * TODO and also rephrace the following
- * No matter what kind (or 'type') of information a JS program uses - the way to work with that information is to store it in a variable.
- * A variable is just a name you use to reference the information stored inside it.
- * The information stored in the variable is called a - value.
- *
- * In a sense, a value is a more important concept than variables.
- * The information itself is a value. Variables are just names you use to reference the values in your program.
- *
- * In many cases, a specific value would have many names. i.e the same exact value can be referenced by many variables.
- * For this reason it's better to think of variables as 'name-tags' rather than 'boxes' that store stuff.
+ * Variables
+ * No matter what kind (or 'type') of information (or value) a JS program uses - the way to work with it is to store it in a variable.
+ * A variable is just a name you use to reference the value stored inside it.
+ * 
+ * Value vs Variable
+ * It's important to realize values and variables are not the same thing.
+ * Variables are more or less analogous to names in a natural language. 
+ * For example, Mathan is a name for a cute little boy. This boy could possibly have more names: Tooni, Matooches, etc. But all names refer to the same boy.
+ * So, the words: "Mathan", "Matooches" and "Tooni" could all be thought of as variables pointing to the same value - the boy.
+ * This is also the case in JS - multiple variables may point to the same value.
+ * The analogy is not perfect though because while in real-life a Name could have multiple meaning (there are other boys named Mathan out there...),
+ * In JS though a variable is always refering to exactly one value.
+ * The variable might change at a later time to point to a different value, but at any given point in time, a variable has (points to) exactly one value.
  */
 
 /*
@@ -70,7 +73,7 @@ girl = "Tuti Dagan";
  *   1. "Tuti Dagan" - A string (text) value is created containing a list of characters - 'T', 'u', 't', 'i', ' ', 'D', 'a', 'g', 'a', 'n'.
  *    This string value is stored in the computer memory the moment you create it, even if you do nothing else with it (it will get automatically cleared if there are no variables referencing it - this proccess is called 'garbage collection').
  *   2. girl = ... - The previously created value, is assigned to the previously declared girl variable. In other words, the variable 'girl' now references the value "Tuti Dagan".
- *      Note, we made used of the 'assignment' operator denoted by '='. More about that in the "operators" chapter.
+ *      Note, we made use of the 'assignment' operator denoted by '='. More about that in the "operators" chapter.
  */
 
 /*
@@ -80,7 +83,7 @@ girl = "Tuti Dagan";
 //export {girl};
 
 /*
- * See? Cool! (don't see it? did you forgot to comment line #2 in this file?)
+ * See? Cool! (don't see it? did you forgot to comment-out line #2 in this file?)
  * Now let's try declaring a constant variable:
  */
 
@@ -105,8 +108,11 @@ const pi = 22/7;
  * Exactly. An error. Open chrome-developer-tools console in the browser to see the error. Leave it open. It's useful.
  *
  * This kind of error is called a compile-time error, because this type of error can be discovered just by READING your program, no need to EXECUTE it!
- * The other kind of error is called run-time error. This kind of error cannot be predicted ahead of time (really. mathematically proven it can't be done).
+ * The other kind of error is called a run-time error. This kind of error cannot be predicted ahead of time (really. mathematically proven it can't be done).
  * With run-time errors, the syntax of the program can be perfectly OK, but something unexpected happened which JS just don't know how to deal with.
+ * 
+ * --- Chrome dev-tools is a very uesful set of tools. You can use it to log, debug and monitor your application.
+ * I recommand playing with it, and maybe go over a tutorial on debugging using dev-tools. ---
  */
 
 /*
@@ -117,14 +123,15 @@ const pi = 22/7;
  * Try both... not at the same time though, as you will get an error.
  */
 
-/* --------- export (number 2) code here ------- */
+/* --------- export code here ------- */
 
 /* --------------------------------------------- */
 
 /*
  * Cool.
  * Ready for your first, real challenge?
- * I'm excited! You? Let's go.
+ * I'm excited! You?
+ * Let's go!!
  */
 
 /*
@@ -138,6 +145,10 @@ let annoying = "Soofgi";
  * Your challenge is to write a piece of code that switches the values of two variables.
  * So after your code runs, the value of cute should be "Soofgi" and the value of annoying would be "Mel".
  * Keep in mind the code you write should not relay on the actual values "Mel" and "Soofgi" and should work even if you later change those.
+ * So the following solution:
+ * cute = "Soofgi"
+ * annoying = "Mel"
+ * Is NOT what we're looking for. The reason is if I change line 141 to: let cute = "Meli" your code will break (you'll need to change it to Meli too).
  */
 
 /* -------- Your code here ---------- */
@@ -183,7 +194,7 @@ let big = 13;
 
 /*
  * ----- What did I learn? ----------
- * In the heart of every JS program are value. chunks of information you can pass around and perform tasks with.
+ * In the heart of every JS program are values. values are chunks of information you can pass around and perform tasks with.
  * The way you reference values is with the use of variables.
  * ----------------------------------
  */

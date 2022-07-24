@@ -38,7 +38,7 @@ export const __disabled = true;
 //alert("Hello world!!!");
 
 /* 
- * Did you see the message? good. You can re-comment the line.. these alerts can get pretty annoying.
+ * Did you see the message? Good. You can re-comment the line.. these alerts can get pretty annoying.
  * You probably guessed the meaning of this statement already - it instructs the browser to show an alert message with a specified text.
  *
  * A semicolon (;) is used at the end of a statement to mark exactly where the statement ends.
