@@ -2,12 +2,11 @@ export const __name = "IV. Types";
 export const __disabled = true;
 
 /*
- * ########################################  
+ * ########################################
  *     tuti.js - IV. Types
- * ########################################  
+ * ########################################
  *
  */
-
 
 /*
  * ------- Chapter Goals ------------------
@@ -17,9 +16,9 @@ export const __disabled = true;
  */
 
 /*
- * A 'value' in Javascript is always of a certain type. For example, a number, text, functions, and even custom types like Cat or ShoppingCart.
+ * A 'value' in Javascript is always of a certain type. For example, a number, text, functions, and even custom types that you define - like Cat or ShoppingCart.
  * You can think of a 'type' as a set of values.
- * For example, the type Number is the set of all numbers. You also think of your own custom type, let's say RoundNumber and define it to be
+ * For example, the type Number is the set of all numbers. You can also think of your own custom type, let's say RoundNumber and define it to be
  * the set of all numbers ending with a zero digit.
  * As you can see RoundNumber is a subset of Number which is a subset of all possible values.
  */
@@ -37,14 +36,14 @@ two = "II"; // now, two holds a value of type String
  * The first line declares a new variable 'two' and assign 2 to it - a value of type Number.
  * The second line assigns the text "II" to the same variable - "II" is a value of type String (which is how JS deals with text).
  *
- * So in JS variables can change types (or more accurately, change the type of values they hold). This feature of a programming language is called 'Dynamic typing'.
+ * So in JS, variables can change types (or more accurately, change the type of values they hold). This feature of a programming language is called 'Dynamic typing'.
  * Other languages (Java for example) which are 'Staticly typed' demand the type of the variable to be declared when creating the variable, and it can never change.
  */
 
 /*
  * Javascript provides you with a few types built-in. It also provides you with a way of creating your own types - we won't cover custom types just yet.
  * Some of the built-in types in javascript:
- * 
+ *
  * Number - both integer and decimal point numbers.
  * BigInt - for when you need integers values larger than (2^53 - 1), which is the largest integer supported by the Number type.
  * String - list of characters. aka text.
@@ -91,8 +90,8 @@ two = "II"; // now, two holds a value of type String
  * Beside representing all numbers you'll probably ever need, the Number type contains 3 more special values: Infinity, -Infinity (negative infinity) and NaN (short for not-a-number).
  * Those 3 values are there to represent result of calculations which are not simple numbers.
  * for example, divide by 0 would give the result of Infinity or -Infinity appropriately.
- * Nan can be a little confusing... the value NaN, which means 'not a number', IS in fact, a value of type Number. Wait, what???
- * Yes, it's easy to understand when you think of types just as collection of values. The type Number is just the set containing values like -12, 3.14, 0, and also the 3 values: Infinity, -Infinity and NaN.
+ * NaN can be a little confusing... the value NaN, which means 'not a number', IS in fact, a value of type Number. Wait, what???
+ * Yes, it's easy to understand it when you think of types just as collection of values. The type Number is just the set containing values like -12, 3.14, 0, and also the 3 values: Infinity, -Infinity and NaN.
  * That's all it is, a set of values. Don't look for something more complicated.. really, stop.
  */
 
@@ -105,7 +104,7 @@ two = "II"; // now, two holds a value of type String
 /*
  * In the rare cases where you need numbers outside the range of Number type which is from -(2^53-1) to (2^53-1) - BigInt got you covered.
  * BigInt can be used to represent integers of unlimited length. But you do pay the price in performance.
- * Since cases where you need such large (or small) numbers is quit rare (cryptography, microsecond-precision timestamps) we won't cover it in detail.
+ * Since cases where you need such large numbers is quit rare (cryptography, microsecond-precision timestamps) we won't cover it in detail.
  *
  * The way you create a value of type BigInt is just writting the number, followed by the latter 'n'. no space.
  */
@@ -123,7 +122,7 @@ two = "II"; // now, two holds a value of type String
 
 /*
  * You must know by now, strings is what we call a list of characters, also known as - text.
- * 
+ *
  * You can create a value of the string type by writting some text inside quotes.
  * Javascript supports 3 kinds of quotes:
  *   1. Single quotes: 'Tuti.js'
@@ -142,7 +141,7 @@ two = "II"; // now, two holds a value of type String
 
 /*
  * OK, this looks useful.
- * But wait, there's a problem. what about those single quotes before the 's' in the word "What's"?
+ * But wait, there's a problem. what about those single quotes before the 's' in the word "What's" in doubleInsideSingle?
  * How can I use the two kinds of quotes inside my text? Well don't worry there is always a way.
  * You can tell javascript that "the next character I type is just text, so leave it as is.. don't try to interpret it".
  * The way you do this is with a back-slash (\). So for a single quote you can do 'you\'re' which will be understood by JS as the string "you're".
@@ -162,7 +161,7 @@ two = "II"; // now, two holds a value of type String
 const fikiBirthYear = 1983;
 const tutiBirthYear = 1988;
 const currentYear = 2020;
-//export const fikiAndTutiAges = `This is ${currentYear}. Tuti's age plus Fiki's age is ${2*currentYear - (fikiBirthYear + tutiBirthYear)} years!`;
+// export const fikiAndTutiAges = `It is now ${currentYear}. Tuti's age plus Fiki's age is ${2*currentYear - (fikiBirthYear + tutiBirthYear)} years!`;
 
 /*
  * See what we did there?
@@ -176,7 +175,6 @@ const currentYear = 2020;
  * The good news is we're done! that's all you need to know about strings... for now.
  * Let's move on!
  */
-
 
 /*
  * --------------------
@@ -198,16 +196,15 @@ const meliIsCute = false;
 //export const someAreCute = tutiIsCute || mathanIsCute || meliIsCute;
 
 /*
- * I know, I didn't tell what are those strange looking && and ||.
+ * I know, I didn't tell you what are those strange looking && and ||.
  * Much like + or - is used to calculate some numbers, && and || are operators (see Operators chapter) for calculating truth values (or "booleans").
  * && meand a logical "and", while || is the logical "or".
  */
 
 /*
- * can you guess the value?
+ * can you guess the value before uncommenting?
  */
-//export const trueOrFalse = ( (true || true) && (false && true) ) && true;
-
+// export const trueOrFalse = ( (true || true) && (false && true) ) && true;
 
 /*
  * --------------------
@@ -221,7 +218,6 @@ const meliIsCute = false;
  */
 //export const god = null;
 
-
 /*
  * --------------------
  *       Undefined
@@ -231,7 +227,7 @@ const meliIsCute = false;
 /*
  * Yet another type with exactly one value - undefined.
  * Used to represent an unkown value. A variable which has the value 'undefined' is usually considered 'unassigned'. No one chose a value for the variable yet.
- * undefined is the default value of every variable you declared but didn't not assigned any value to.
+ * undefined is the default value of every variable you declared but did not assign any value to.
  */
 //export let iDontKnowWhoIam;
 
@@ -239,10 +235,9 @@ const meliIsCute = false;
  * Interesting point: changing the 'let' above to 'const' will cause a complie-time error, because there is no reason to declare a constant without assigning it a value. Constants can only be assigned at declaration.
  */
 
-/* 
+/*
  * Interesting and confusing point: null and undefined both represent some non-value notion, however they ARE themselves completely normal VALUES.
  */
-
 
 /*
  * --------------------
@@ -259,7 +254,7 @@ const meliIsCute = false;
  * An objet is denoted with curlybraces {...}.
  * Inside the curlybraces, you specify the values of the object and their names. The names of the values are often referred to as 'keys'.
  * So an object looks like: {someKey1: someValue1, someKey2: someValue2, ..., someKeyN: someValueN}
- * 
+ *
  * Here's the example object described above:
  */
 
@@ -283,7 +278,7 @@ const notAThing = {};
 
 /*
  * Yep, you got it. Two objects are considered the same if and only if they are in fact ONE object. You can test for than with the === operator.
- * 
+ *
  * Important!
  * While you can create multiple objects which look identical but are different instances, other types like number, string, boolean (also called 'primitive' types) are different.
  * Any two primitives with similar values are actually not two values, but ONE.
@@ -350,7 +345,7 @@ const primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19];
 /*
  * Take a few minutes to really try and guess what those scary things mean.
  * Remeber you can always try and 'export' something to help you understand.
- * 
+ *
  * What's the deal with 1970 you ask? In most computer system time is represented by a number of time units (seconds, miliseconds, etc) since 01/01/1970.
  * See https://en.wikipedia.org/wiki/Unix_time for more details.
  */
@@ -383,21 +378,21 @@ const primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19];
  */
 
 const placeA = {
-    name: "Tuti's home",
-    address: "Adani Paz 48, Hadera",
-    location: {
-        x: 100,
-        y: 80
-    }
+  name: "Tuti's home",
+  address: "Adani Paz 48, Hadera",
+  location: {
+    x: 100,
+    y: 80,
+  },
 };
 
 const placeB = {
-    name: "Gilboa",
-    address: "mt. Gilboa",
-    location: {
-        x: 800,
-        y: -140
-    }
+  name: "Gilboa",
+  address: "mt. Gilboa",
+  location: {
+    x: 800,
+    y: -140,
+  },
 };
 
 /*
@@ -421,7 +416,7 @@ const placeA_x = null;
  * Write a similar peice of code as before, only for exctracting a coordinate name stored in wantedCoordinate.
  */
 
-const wantedCoordinate = 'y';
+const wantedCoordinate = "y";
 /* ---- your code here ----- */
 const placeA_coordinate = null;
 /* ------------------------- */
@@ -434,7 +429,7 @@ const placeA_coordinate = null;
  */
 
 /*
- * Ready? Moving on. 
+ * Ready? Moving on.
  *
  * Write some code for calculating the distance between placeA and placeB!
  */
@@ -457,12 +452,12 @@ const distanceFromAtoB = null;
  */
 
 const placeC = {
-    name: "Icecream place",
-    address: "near mt. Gilboa",
-    location: {
-        x: 804,
-        y: -138
-    }
+  name: "Icecream place",
+  address: "near mt. Gilboa",
+  location: {
+    x: 804,
+    y: -138,
+  },
 };
 
 /*
@@ -481,7 +476,6 @@ const totalRouteLength = null;
 
 //export {totalRouteLength};
 
-
 /*
  * I'm so proud of you! You are killing it!
  * You completed this chapter successfully - I promise you, beautiful things are coming.
@@ -499,5 +493,5 @@ const totalRouteLength = null;
  * You learned about JS primitive types, and you now know how to work with objects and arrays!
  * ----------------------------------
  */
- 
+
 /* >>>>>> Next chapter: Operators >>>>>> */
