@@ -277,7 +277,7 @@ const notAThing = {};
 //export const areWeTheSame = nothing === notAThing;
 
 /*
- * Yep, you got it. Two objects are considered the same if and only if they are in fact ONE object. You can test for than with the === operator.
+ * Yep, you got it. Two objects are considered the same if and only if they are in fact ONE object. You can test for that with the === operator.
  *
  * Important!
  * While you can create multiple objects which look identical but are different instances, other types like number, string, boolean (also called 'primitive' types) are different.
@@ -339,7 +339,7 @@ const primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19];
  * For now, let's have some fun trying to guess what's going on in the following lines:
  */
 
-//export const milisecondsSine1970 = Date.now();
+//export const milisecondsSince1970 = Date.now();
 //export const mathanAgeInHours = Math.round((milisecondsSine1970 - new Date(2019, 8, 16).getTime()) / 1000 / 60 / 60);
 
 /*
@@ -372,14 +372,14 @@ const primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19];
  * What kind of values would you need to represent in your program? Well you'll probably need to represents locations, routes, drivers, etc.
  *
  * For the sake of this exercise, we'll be focusing on places, locations and routes.
- * For simplisity sake, let's imagine a flat earth, so locations can be described by x,y coordinates (other than longitude and latitude).
+ * For simplisity sake, let's imagine a flat earth, so locations can be described by x,y coordinates (rather than longitude and latitude).
  *
  * Here are a couple of places for example:
  */
 
 const placeA = {
   name: "Tuti's home",
-  address: "Adani Paz 48, Hadera",
+  address: "Kibutz Afik",
   location: {
     x: 100,
     y: 80,
@@ -413,7 +413,7 @@ const placeA_x = null;
  * Great! let's continue.
  * What if you don't know whether you need the x, or y coordinate?
  *
- * Write a similar peice of code as before, only for exctracting a coordinate name stored in wantedCoordinate.
+ * Write a similar peice of code as before, only for extracting a coordinate name stored in wantedCoordinate.
  */
 
 const wantedCoordinate = "y";

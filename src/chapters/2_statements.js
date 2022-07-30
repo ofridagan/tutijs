@@ -44,7 +44,7 @@ export const __disabled = true;
  * A semicolon (;) is used at the end of a statement to mark exactly where the statement ends.
  * It's worth noting that in most cases JS can figure out where a statement ends even without the semicolon, so it's not mandatory.
  * However it can sometimes cause ambiguity in interpreting your code, which can make JS complain.
- * Hence, it is consider best practice to always start a statement in a new line, and end a it with a semicolon (;).
+ * Hence, it is consider best practice to always start a statement in a new line, and end it with a semicolon (;).
  */
 
 /*
