@@ -32,7 +32,7 @@ export const __name = "I. Introduction";
  * Comments are meant to be read by humans. They are suppose to shine light on the more complex parts of your code and help others (or future you)
  * decipher the ideas or logic behind a particular piece code.
  *
- * TIP: you should always prefer a simple and readable code with little or no comments, to code which is complex but well commented.
+ * TIP: you should always prefer a simple and readable code with little or no comments, as opposed to code which is complex but well commented.
  *
  * JS (javascript) allows us to add comments in two different ways:
  * 1. single-line comments are written as // and then your comment (see line 2 in this file, for example).
