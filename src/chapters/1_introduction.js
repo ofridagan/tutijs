@@ -44,7 +44,7 @@ export const __name = "I. Introduction";
 */
 
 /*
- * Currently, this file includes exactly one, uncommented line (Line #1 which tells tuti.js about the name of this chapter),
+ * Currently, this file includes exactly one, uncomment line (Line #1 which tells tuti.js about the name of this chapter),
  * Time to uncomment some lines.
  * Please uncomment all 6 single-line comments bellow (delete the //'s):
  */
