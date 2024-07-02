@@ -10,7 +10,7 @@ Play with it, have fun!
 
 ## Installation	
 
-### Get you environment ready
+### Get your environment ready
 The first thing we need to do is make sure you have all the tools needed to be a JS developer.
 This can take some time the first time you do it... even a few hours.
 
