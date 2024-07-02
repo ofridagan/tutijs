@@ -33,7 +33,7 @@ You can check if node.js is installed by running:
 **install dependencies**
 
 	cd tutijs
-    sudo npm install
+    	npm install
 
 ## Running
 
