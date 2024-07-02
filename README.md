@@ -38,7 +38,7 @@ You can check if node.js is installed by running:
 ## Running
 
 **Running development server**
-The development server runs on your machine and serves the project your are about to write
+The development server runs on your machine and serves the project you are about to write
 
     npm run start
   Your default browser should open at [http://localhost:8080/](http://localhost:8080/) and you should see the app there
