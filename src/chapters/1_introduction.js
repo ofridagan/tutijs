@@ -29,7 +29,7 @@ export const __name = "I. Introduction";
  * But to help you out a bit, let me tell you about Comments.
  *
  * Comments are lines of code, which are meant to be ignored. In fact javascript actually deletes those lines before running your program.
- * Comments are meant to be read by hummans. They are suppose to shine light on the more complex parts of your code and help others (or future you)
+ * Comments are meant to be read by humans. They are suppose to shine light on the more complex parts of your code and help others (or future you)
  * decipher the ideas or logic behind a particular piece code.
  *
  * TIP: you should always prefer a simple and readable code with little or no comments, to code which is complex but well commented.
