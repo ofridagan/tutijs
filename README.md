@@ -22,7 +22,7 @@ You can check if node.js is installed by running:
     node --version
 
 **setup your [git](https://help.github.com/en/github/getting-started-with-github/set-up-git#setting-up-git)**
-
+**setup your [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)**
 
 ### Get tuti.js
 **Clone this repository**
@@ -33,7 +33,7 @@ You can check if node.js is installed by running:
 **install dependencies**
 
 	cd tutijs
-    npm install
+    yarn install
 
 ## Running
 
